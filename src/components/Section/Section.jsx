@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Section.css'
+import css from './Section.module.css'
 
 import Header from 'components/Header/Header';
 
 const Section = ({ title, children }) => {
   return (
-    <section className='section'>
+    <section className={css.section}>
       <Header title={title} />
       {children}
     </section>

@@ -5,7 +5,7 @@ import ContactList from '../components/ContactList/ContactList';
 import Filter from '../components/Filter/Filter';
 import ContactForm from '../components/ContactForm/ContactForm';
 import { nanoid } from 'nanoid';
-import './App.css'
+import  css from './App.module.css'
 
 class App extends Component {
   state = {
@@ -61,7 +61,7 @@ class App extends Component {
     const visibleContacts = this.getVisibleContacts();
 
     return (
-      <div className="container">
+      <div className={css.container}>
         <Section title="Phonebook">
           <ContactForm onSubmit={this.addToList} />
           <Header title="Contacts" />

@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Header.css'
+import css from './Header.module.css'
 
 const Header = ({ title }) => {
-  return <p className='title'>{title}</p>;
+  return <p className={css.title}>{title}</p>;
 };
 
 export default Header;
